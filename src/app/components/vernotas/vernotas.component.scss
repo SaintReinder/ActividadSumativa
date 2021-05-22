@@ -1,0 +1,67 @@
+.supercaja{
+    height: 30em;
+    margin-top: 1em;
+}
+
+.contenedor{
+    width: 30%;
+    height: 25em;
+    float: left;
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+li{
+    list-style-type: none;
+}
+
+.ncerrado{
+    border: solid;
+    border-width: 0.05em;
+    width: 90%;
+    height: 2.5em;
+    margin: 1em;
+    background: rgb(214, 84, 84);
+}
+
+.nproceso{
+    border: solid;
+    border-width: 0.05em;
+    width: 90%;
+    height: 2.5em;
+    margin: 1em;
+    background: rgb(143, 230, 143);
+}
+
+.nabierto{
+    border: solid;
+    border-width: 0.05em;
+    width: 90%;
+    height: 2.5em;
+    margin: 1em;
+    background: rgb(109, 109, 245);
+}
+
+.delet{
+    float: right;
+    padding: 0.5em;
+    margin-top: -2.3em;
+}
+
+.text{
+    float: left;
+    font-size: 1.3em;
+    width: 20%;
+    margin-top: 1.5em;
+    margin-left: 0.9em;
+}
+
+footer{
+    text-align: center;
+}
+
+button{
+    padding: 0.5em;
+    width: 20em;
+    margin-right: 30em;
+}

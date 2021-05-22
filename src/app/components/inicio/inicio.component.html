@@ -1,0 +1,26 @@
+<div class="datos">
+    <form action="/Vernotas" method="GET" id="formulario">
+        <ul>
+            <li>
+                <label for="titulotext" id="titulo">Titulo</label><br>
+                <input type="text" placeholder="Nota" id="titulotext" maxlength="20" required>
+            </li>
+            <li>
+                <label for="estadotext" id="estado">Estado</label><br>
+                <select name="" id="estadotext" required>
+                    <option value="">Select</option>
+                    <option value="1">Abierto</option>
+                    <option value="2">En Proceso</option>
+                    <option value="3">Cerrado</option>
+                </select>
+            </li>
+            <li>
+                <label for="descripciontext" id="descripcion">Descripción</label><br>
+                <textarea name="" id="descripciontext" maxlength="150" placeholder="Redacte una breve descripcón" required></textarea>
+            </li>
+            <div class="boton">
+                <button type="submit">Actualizar</button>
+            </div>
+        </ul>
+    </form>
+</div>

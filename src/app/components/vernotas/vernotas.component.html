@@ -1,0 +1,45 @@
+<div class="supercaja">
+    <div>
+        <div class="contenedor">
+            <li *ngFor="let item of ListaNotas">
+                <div class="ncerrado" *ngIf="item.estado==1">
+                    <div>
+                        {{item.titulo}}<br>
+                        {{item.descripcion}}
+                    </div>
+                    <div class="delet">X</div>
+                </div>
+            </li >
+        </div>
+
+        <div class="contenedor">
+            <li *ngFor="let item of ListaNotas">
+                <div class="nproceso" *ngIf="item.estado==2">
+                    <div [routerLink]="['/']" routerLinkActive="router-link-active" >
+                        {{item.titulo}}<br>
+                        {{item.descripcion}}
+                    </div>
+                    <div class="delet">X</div>
+                </div>
+            </li>
+        </div>
+
+        <div class="contenedor">
+            <li *ngFor="let item of ListaNotas" >
+                <div class="nabierto" *ngIf="item.estado==3">
+                    <div [routerLink]="['/']" routerLinkActive="router-link-active" >
+                        {{item.titulo}}<br>
+                        {{item.descripcion}}
+                    </div>
+                    <div class="delet">X</div>
+                </div>
+            </li>
+        </div>
+
+    </div><br>
+    <div class="text">Al dar click sobre cada nota permitirá editar</div>
+</div>
+
+<footer>
+    <a [routerLink]="['/']" routerLinkActive="router-link-active"><button type="submit">+ Adicionar</button></a>
+</footer>
